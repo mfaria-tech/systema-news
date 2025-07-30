@@ -3,7 +3,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "seed": "tsx src/db/seed.ts"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",
