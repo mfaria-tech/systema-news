@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Cutive+Mono&family=IM+Fell+English:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&family=Special+Elite&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --color-background-dark: ;
+  --color-background-light: ;
+  --color-button-dark: ;
+  --color-button-light: ;
+  --color-icon-dark: ;
+  --color-icon-light: ;
+  --color-header-dark: ;
+  --color-header-light: ;
+  --color-text-dark: ;
+  --color-text-light: #000;
+  --color-title-dark: ;
+  --color-title-light: ;
+  --color-subtitle-dark: ;
+  --color-subtitle-light: #ff5555;
+  --font-title: "Spectral SC", serif;
+  --font-text: "Cinzel", sans-serif;
+}
+
+* {
+  font-family: var(--font-text);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+body {
+  background-color: var(--color-background-light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+a, 
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--color-text-light);
+}
+
