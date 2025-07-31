@@ -1,5 +1,6 @@
 import styles from '@/styles/app.module.css';
 import React from 'react';
+import Highlights from '@/components/Highlights';
 
 export const dynamic = 'force-dynamic';
 
@@ -14,6 +15,7 @@ export default async function HomePage() {
   return (
     <div id={styles.homepage}>
       <h2>Artigos em Destaque</h2>
+      <Highlights />
 
       <h2>Todos os Artigos</h2>
       <ul>
