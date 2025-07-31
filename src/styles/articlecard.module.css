@@ -1,0 +1,30 @@
+#cdNews {
+  display: grid;
+  grid-template-rows: 215px 81px 12px 54px;
+  row-gap: 6px;
+  border: 1px solid #d1d1d1;
+  border-radius: 12px;
+  padding: 18px 24px;
+}
+
+#imgCdNews {
+  min-width: 256px;
+  min-height: 215px;
+  border-radius: 9px;
+  background: #c2c2c2;
+  background: linear-gradient(75deg, #c2c2c2 0%, #e7e7e7 25%, #e7e7e7 75%,  #c2c2c2 100%);
+}
+
+#titleCdNews {
+  font-size: 24px;
+}
+
+#dtCdNews {
+  font-size: 11px;
+  justify-self: end;
+  align-self: center;
+}
+
+#textCdNews {
+  font-size: 15px;
+}
