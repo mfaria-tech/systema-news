@@ -1,0 +1,164 @@
+#header {
+  display: grid;
+  row-gap: 9px;
+  column-gap: 12px;
+  padding: 15px 36px;
+  align-items: center;
+  grid-template-rows: 125px 45px;
+  grid-template-columns: 25% calc(50% - 24px) 25%;
+  grid-template-areas: 
+    "empty logotype search"
+    "nav nav nav";
+}
+
+#ctnLogotype {
+  display: flex;
+  flex-direction: column;
+  grid-area: logotype;
+  align-items: center;
+  justify-content: center;
+}
+
+#logotype {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 9px;
+  text-align: center;
+  width: 100%;
+  font-size: 45px;
+}
+
+/* #logotype > .logoHigh {
+  color: #ff3838;
+  font-family: var(--font-title);
+  font-weight: 600;
+} */
+
+#dtNews {
+  display: flex;
+  flex-direction: row;
+  column-gap: 6px;
+  align-items: center;
+  justify-content: center;
+}
+
+.dtLine {
+  position: relative;
+  display: inline-block;
+  padding: 0 1rem;
+  font-size: 1rem;
+  color: var(--color-subtitle-light);
+  font-weight: 700;
+}
+
+.dtLine::before,
+.dtLine::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 2px;
+  background-color: #ff5555;
+}
+
+.dtLine::before {
+  left: -60px;
+}
+
+.dtLine::after {
+  right: -60px;
+}
+
+#ctnSearch {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  column-gap: 9px;
+  grid-area: search;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#inpSearch {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex: 1;
+  min-width: 0;
+  padding-left: 15px;
+  border-radius: 100px;
+  border: 1px solid #d1d1d1;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: max-width 0.3s ease;
+}
+
+#inpSearch.hidden {
+  max-width: 32px;
+  padding: 0;
+}
+
+#inpSearch.visible {
+  max-width: 225px;
+}
+
+#inpSearch input {
+  border: none;
+  padding: 0;
+  flex: 1;
+  min-width: 0;
+}
+
+#inpSearch input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#inpSearch .btnIcon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 6px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#btnDarkmode {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  border: 1px solid #d1d1d1;
+  padding: 6px;
+}
+
+#header > nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 9px;
+  align-items: center;
+  justify-content: center;
+  grid-area: nav;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.btnNav {
+  padding: 9px 18px;
+  /* border-radius: 100px;
+  border: 1px solid #d1d1d1;
+  box-shadow: 1px 1px 4px 0px #999999; */
+}
+
+.btnNav:hover {
+  position: relative;
+  opacity: .6;
+}
