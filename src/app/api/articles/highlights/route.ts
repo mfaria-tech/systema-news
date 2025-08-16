@@ -9,14 +9,13 @@ export async function GET() {
     FROM articles
     WHERE active = 1 AND highlight = 1
     ORDER BY createdAt DESC
-    LIMIT 6
+    LIMIT 4
   `);
 
   return new Response(JSON.stringify(highlights), {
     status: 200,
     headers: {
-      'Content-Type': 'application/json',
-      'Cache-Control': 'public, max-age=900'
+      'Content-Type': 'application/json'
     }
   });
 }
